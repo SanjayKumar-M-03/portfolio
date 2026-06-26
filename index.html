@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sanjay Kumar - MSc Computer Science Graduate, UI/UX Designer, and Web Developer based in Madurai, India. Discover user-centered designs and highly optimized web interfaces.">
+    <meta name="keywords" content="Sanjay Kumar, UI/UX Designer, Web Developer, MSc Computer Science, The Madura College, Portfolio, Frontend Engineer, India">
+    <meta name="author" content="Sanjay Kumar">
+    
+    <meta property="og:title" content="Sanjay Kumar | UI/UX Designer & Web Developer">
+    <meta property="og:description" content="Premium personal portfolio showcasing high-end user experiences and modern web applications by Sanjay Kumar.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sanjaykumar.dev">
+    <meta property="og:image" content="assets/images/og-preview.jpg">
+
+    <title>Sanjay Kumar | UI/UX Designer & Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span class="loader-text">SANJAY KUMAR</span>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <div class="animated-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Sanjay Kumar Home">SK<span>.</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class='bx bx-sun sun-icon'></i>
+                    <i class='bx bx-moon moon-icon'></i>
+                </button>
+                <div class="mobile-menu-btn" role="button" aria-label="Toggle Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section text-reveal-container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Welcome to my Digital Space</p>
+                    <h1 class="hero-title">Sanjay Kumar</h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        MSc Computer Science graduate specializing in cutting-edge interactive user experience designs combined with performant web applications. Based in Madurai, Tamil Nadu, India.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="assets/resume.pdf" download class="btn btn-primary">
+                            <span>Download Resume <i class='bx bx-download'></i></span>
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary">
+                            <span>View Projects</span>
+                        </a>
+                        <a href="#contact" class="btn btn-tertiary">
+                            <span>Contact Me <i class='bx bx-arrow-right'></i></span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/sanjay-kumar-m03/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="mailto:sanjaykumar.m03@outlook.com" aria-label="Email" class="social-icon"><i class='bx bx-envelope'></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-container">
+                        <img src="assets/images/sanjay-avatar.png" alt="Sanjay Kumar Headshot" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>MSc Computer Science Graduate & UI/UX Enthusiast</h3>
+                        <p>I hold a Master of Science in Computer Science from <strong>The Madura College</strong>. This advanced technical background provides me with a deep architectural understanding of computing systems, algorithms, and application performance optimizations.</p>
+                        <p>Combining computational theory with user interface design psychology, I excel at turning complex workflows into transparent, high-fidelity responsive user experiences. My focus remains steadfast on accessibility standards, modern responsive design paradigms, and continuous self-improvement.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number" data-target="5">0</h4>
+                            <p class="stat-label">Projects Built</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number" data-target="20">0</h4>
+                            <p class="stat-label">Technologies Learned</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number" data-target="2">0</h4>
+                            <p class="stat-label">Internships Completed</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number" data-target="5">0</h4>
+                            <p class="stat-label">UI Concepts Created</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skills-card glass-panel">
+                        <h3><i class='bx bx-paint'></i> UI/UX Design</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Interface Design & Prototyping</span><span>95%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>User Research & Wireframing</span><span>90%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Design Systems & Interaction Design</span><span>85%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="85%"></div></div>
+                        </div>
+                        <p class="tools-tags"><strong>Tools:</strong> Figma, Canva, Adobe XD</p>
+                    </div>
+                    <div class="skills-card glass-panel">
+                        <h3><i class='bx bx-code-alt' ></i> Front-End Architecture</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML5 & Semantic Web</span><span>95%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>CSS3 (Flexbox, Grid, Animations)</span><span>90%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Vanilla JavaScript (ES6+)</span><span>85%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="85%"></div></div>
+                        </div>
+                        <p class="tools-tags"><strong>Core:</strong> Responsive Web Design, Optimization</p>
+                    </div>
+                    <div class="skills-card glass-panel">
+                        <h3><i class='bx bx-data' ></i> Engineering & Automation</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python Programming</span><span>80%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>PHP Backend Scripting</span><span>75%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Relational Databases (MySQL, SQLite)</span><span>80%</span></div>
+                            <div class="skill-bar-container"><div class="skill-bar" data-width="80%"></div></div>
+                        </div>
+                        <p class="tools-tags"><strong>Workflow Tools:</strong> Git, GitHub, XAMPP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-columns-grid">
+                    <div class="experience-column-card glass-panel">
+                        <div class="exp-card-header">
+                            <div class="exp-badge-icon"><i class='bx bx-paint'></i></div>
+                            <div class="exp-header-text">
+                                <span class="exp-duration-tag">July 2025 - October 2025</span>
+                                <h3>UI/UX Design Intern</h3>
+                                <h4>ZIDIO Development</h4>
+                                <span class="exp-location-info"><i class='bx bx-map'></i> Bengaluru, Karnataka (Remote)</span>
+                            </div>
+                        </div>
+                        <div class="exp-verification-subblock">
+                            <!-- <span class="verification-pill">Verified ID: zid/8EMHSg37VX</span>
+                            <span class="verification-pill"><i class='bx bx-file'></i> ZIDIO Certification of Internship.pdf</span> -->
+                        </div>
+                        <ul class="exp-bullets-list">
+                            <li>Designed intuitive UI/UX wireframes and responsive layouts for seamless user experiences.</li>
+                            <li>Demonstrated exceptional commitment to system design quality, design consistency, and active engineering growth parameters.</li>
+                            <li>Collaborated directly inside iterative feedback sprints tracking functional cross-device interface parameters.</li>
+                            <li>Aligned execution deliverables directly with professional ISO 9001:2015 organizational operational workflows.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-column-card glass-panel">
+                        <div class="exp-card-header">
+                            <div class="exp-badge-icon"><i class='bx bx-code-alt'></i></div>
+                            <div class="exp-header-text">
+                                <span class="exp-duration-tag">June 2025 - August 2025</span>
+                                <h3>Web Developer Intern</h3>
+                                <h4>phRism Solutions</h4>
+                                <span class="exp-location-info"><i class='bx bx-map'></i> Coimbatore, Tamil Nadu</span>
+                            </div>
+                        </div>
+                        <div class="exp-verification-subblock">
+                            <!-- <span class="verification-pill">Verified Role</span> -->
+                        </div>
+                        <ul class="exp-bullets-list">
+                            <li>Assisted inside core development tracks configuring relational schemas and dynamic web applications.</li>
+                            <li>Engineered highly responsive client-side interface elements prioritizing browser performance criteria.</li>
+                            <li>Integrated responsive viewport configurations to eliminate operational layout shifting bugs.</li>
+                            <li>Collaborated inside peer engineering code review pipelines to execute software validation procedures.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Selected Projects</h2>
+                
+                <div class="portfolio-block alignment-block-top">
+                    <h3 class="portfolio-category-headline"><i class='bx bx-code-curly'></i> Web Page & Application Systems</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card glass-panel" data-project="1">
+                            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #2563EB, #7C3AED);">
+                                <i class='bx bx-graduation project-icon-fallback'></i>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-badges">
+                                    <span class="badge">PHP</span><span class="badge">MySQL</span><span class="badge">JS</span>
+                                </div>
+                                <h3>Student Database Management System</h3>
+                                <p>A unified college infrastructure engineering solution built around dynamic data tables and structural back-end security workflows.</p>
+                                <button class="btn-text">Explore Details <i class='bx bx-right-top-arrow-circle'></i></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-card glass-panel" data-project="2">
+                            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #7C3AED, #06B6D4);">
+                                <i class='bx bx-shopping-bag project-icon-fallback'></i>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-badges">
+                                    <span class="badge">HTML5/CSS3</span><span class="badge">PHP</span><span class="badge">MySQL</span>
+                                </div>
+                                <h3>Hardware & Electricals E-Commerce Website</h3>
+                                <p>A production-grade retail web platform engineered with precise catalog indexing workflows and modular customer checkouts.</p>
+                                <button class="btn-text">Explore Details <i class='bx bx-right-top-arrow-circle'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-block alignment-block-bottom">
+                    <h3 class="portfolio-category-headline"><i class='bx bx-vector'></i> UI/UX Design Case Studies</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card glass-panel" data-project="3">
+                            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #06B6D4, #2563EB);">
+                                <i class='bx bx-scan project-icon-fallback'></i>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-badges">
+                                    <span class="badge">Figma</span><span class="badge">Prototyping</span><span class="badge">System Design</span>
+                                </div>
+                                <h3>Face Recognition Cryptography Dashboard</h3>
+                                <p>User experience architecture mapping advanced cryptographic authorization flows into simplified desktop user panels.</p>
+                                <button class="btn-text">Explore Details <i class='bx bx-right-top-arrow-circle'></i></button>
+                            </div>
+                        </div>
+                        <div class="portfolio-card glass-panel" data-project="4">
+                            <div class="project-img-placeholder" style="background: linear-gradient(135deg, #2563EB, #06B6D4);">
+                                <i class='bx bx-window-alt project-icon-fallback'></i>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-badges">
+                                    <span class="badge">Wireframing</span><span class="badge">UI Kit</span><span class="badge">User Research</span>
+                                </div>
+                                <h3>College Student & Teacher Portal Ecosystem</h3>
+                                <p>Comprehensive digital system overhaul balancing complex multi-role workflows into intuitive mobile-first administrative grids.</p>
+                                <button class="btn-text">Explore Details <i class='bx bx-right-top-arrow-circle'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="services-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Services Offered</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class='bx bx-palette'></i></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating professional layout systems built entirely from detailed user research, mapping workflows, interactive wireframes, custom web design systems, and rapid high-fidelity prototyping phases.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class='bx bx-desktop'></i></div>
+                        <h3>Web Development</h3>
+                        <p>Constructing scalable digital applications with optimized code architectures. Tailoring interfaces specifically around performance benchmarks, accessibility targets, and complete corporate identity parameters.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class='bx bx-mobile-alt'></i></div>
+                        <h3>Technical Support Engineer</h3>
+                        <p>Provided end-user technical support, resolved software and system issues, documented incidents, and maintained high service quality through effective troubleshooting and communication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">My Execution Framework</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-num">01</div>
+                        <h4>Research</h4>
+                        <p>Analyzing functional specifications and defining direct user behavioral patterns.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">02</div>
+                        <h4>Wireframe</h4>
+                        <p>Constructing explicit layout wireframes ensuring information visibility weights.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">03</div>
+                        <h4>Prototype</h4>
+                        <p>Building high-fidelity interactive flow models simulating targeted application states.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">04</div>
+                        <h4>Design</h4>
+                        <p>Applying modern typographic systems, responsive grids, and visual identities.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">05</div>
+                        <h4>Develop</h4>
+                        <p>Writing standardized clean markup, performant vanilla logic, and semantic architectures.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-num">06</div>
+                        <h4>Test & Launch</h4>
+                        <p>Validating across device criteria, debugging execution paths, and live structural deployments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Professional Feedback</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-panel">
+                        <p class="testimonial-text">"Sanjay executed complex requirements systematically during his internship. His ability to link computing logic with clean layout adjustments optimization significantly assisted development milestones."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback"><i class='bx bx-user-voice'></i></div>
+                            <div>
+                                <h4>Engineering Lead</h4>
+                                <p>phRism Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-panel">
+                        <p class="testimonial-text">"Sanjay demonstrated strong investigative engineering competencies during his research modules. His architectural projects showed clean logic documentation, execution parameters, and highly readable interfaces."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback"><i class='bx bx-user-voice'></i></div>
+                            <div>
+                                <h4>Academic Supervisor</h4>
+                                <p>The Madura College</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-panel">
+                        <p class="testimonial-text">"A dedicated frontend developer focused on high accessibility standards. Sanjay writes explicit, easily maintainable modern CSS patterns alongside optimized structures."</p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback"><i class='bx bx-user-voice'></i></div>
+                            <div>
+                                <h4>Senior Evaluator</h4>
+                                <p>Project Panel Committee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Collaborate On Your Next Project</h3>
+                        <p>I am available for employment opportunities, contract-based UI/UX designs, and Technical Support Engineer assignments.</p>
+                        <div class="info-list">
+                            <div class="info-item"><i class='bx bx-map'></i> <span>Madurai, Tamil Nadu, India</span></div>
+                            <div class="info-item"><i class='bx bx-envelope'></i> <span>sanjaykumar.m03@outlook.com</span></div>
+                            <div class="info-item"><i class='bx bx-phone'></i> <span>+91 98765 43210</span></div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container glass-panel">
+                        <form id="portfolio-contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe">
+                                <span class="error-msg" id="err-name">Name field must not be empty.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="john@example.com">
+                                <span class="error-msg" id="err-email">Please input a valid email address.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Phone</label>
+                                <input type="tel" id="form-phone" placeholder="9876543210">
+                                <span class="error-msg" id="err-phone">Please enter a valid phone sequence.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Your messaging parameters..."></textarea>
+                                <span class="error-msg" id="err-message">Message string cannot be empty.</span>
+                            </div>
+                            <input type="submit" value="Send Message" class="btn btn-primary form-submit">
+                            <div class="success-banner" id="form-success">Message transmitted successfully! I will reach out soon.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="nav-logo">SK<span>.</span></a>
+                <p>MSc Computer Science Graduate specialized in visual UI/UX systems and optimized frontend system implementations.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials-block">
+                <h4>Connect</h4>
+                <div class="social-row">
+                    <a href="https://www.linkedin.com/in/sanjay-kumar-m03/" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:sanjaykumar.m03@outlook.com"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sanjay Kumar. All rights reserved. Designed and developed with vanilla languages.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="portfolio-modal">
+        <div class="modal-card glass-panel">
+            <button class="modal-close" aria-label="Close Modal"><i class='bx bx-x'></i></button>
+            <div class="modal-body" id="modal-dynamic-content">
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top" aria-label="Scroll Back to Top"><i class='bx bx-up-arrow-alt'></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
